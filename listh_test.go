@@ -38,7 +38,7 @@ func verify(input []int, wg *sync.WaitGroup) bool {
 			set[e] = true
 		}
 	}
-	fmt.Println()
+
 	for _, e := range input {
 		if _, ok := set[e]; !ok {
 			fmt.Printf("missing number <%d>", e)
